@@ -10,6 +10,7 @@ gem 'pg', '~> 0.20.0'
 gem 'thin'
 gem 'bcrypt'
 gem 'require_all'
+gem 'trailblazer'
 
 group :development do
   gem 'byebug'

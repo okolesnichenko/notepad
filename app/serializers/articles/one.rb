@@ -5,7 +5,7 @@ module Serializers
 
       set_type :article
 
-      attributes :name
+      attributes :name, :created_at, :updated_at
     end
   end
 end

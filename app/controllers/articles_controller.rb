@@ -4,6 +4,11 @@ class ArticlesController < ApplicationController
     Serializers::Articles::Many.new(scope).serialized_json
   end
 
+  get '/articles/:id' do |id|
+    article = Article.find(id)
+    Serializers::Articles::One.new(scope).serialized_json
+  end
+
   post '/articles' do
     article = Article.new(params)
 

@@ -1,10 +1,3 @@
-#require 'sinatra'
-#require 'require_all'
-#require 'dotenv/load'
-#require 'sinatra/cross_origin'
-#require 'sinatra/activerecord'
-#require './config/environment'
-#require './config/cors'
 $app_env = ENV.fetch('APP_ENV', 'development').to_sym
 
 def load_bundler

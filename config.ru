@@ -1,3 +1,4 @@
-require './app'
+require './config/boot'
+use ArticlesController
 run Sinatra::Application
-run ArticlesController
+
